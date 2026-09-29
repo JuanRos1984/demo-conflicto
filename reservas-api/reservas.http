@@ -1,0 +1,15 @@
+@api = http://localhost:5080
+
+### Listar reservas
+GET {{api}}/reservas
+
+### Crear una reserva
+POST {{api}}/reservas
+Content-Type: application/json
+
+{
+  "cancha": "Cancha 1",
+  "cliente": "Ana",
+  "inicio": "2026-10-03T18:00:00",
+  "horas": 2
+}
