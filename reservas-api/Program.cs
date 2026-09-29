@@ -3,6 +3,8 @@ using ReservasApi.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<ServicioReservas>();
+builder.Services.AddSingleton<ServicioConflicto>();
+
 
 var app = builder.Build();
 
